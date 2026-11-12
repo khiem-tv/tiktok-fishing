@@ -1,0 +1,29 @@
+<!DOCTYPE html><html lang="vi"><head><meta charset="utf-8"><title>TikTok Live Fishing</title>
+<style>html,body{margin:0;height:100%;background:#000;overflow:hidden}body.t{background:transparent}
+#c{position:absolute;left:50%;top:50%;width:1080px;height:1920px}
+#bar{position:fixed;left:0;bottom:0;background:#000b;color:#fff;font:13px sans-serif;padding:6px;z-index:9;display:flex;gap:4px;flex-wrap:wrap;max-width:330px}
+#bar button{font-size:13px;padding:5px 8px;cursor:pointer}</style></head><body>
+<canvas id="c" width="1080" height="1920"></canvas>
+<div id="bar"><div id="ttstat" style="width:100%">⏳ Đang chờ server...</div><button onclick="startAudio()">🔊 Bật âm thanh</button>
+<button onclick="mock('chat')">💬 Comment</button><button onclick="mock('like')">❤️ Thả tim</button>
+<button onclick="mock('follow')">➕ Follow</button><button onclick="mock('small')">🎁 Quà nhỏ</button>
+<button onclick="mock('big')">💎 Quà lớn</button><button onclick="mock('spot')">🎬 Giằng co cá lớn</button><button onclick="mock('keo')">💪 Spam KEO</button><button onclick="mock('fake')">🤡 Fake focus</button><button onclick="mock('slip')">🩴 Ném dép</button><button onclick="mock('boat')">🚤 Ca-nô</button><button onclick="mock('storm')">⚡ Sét</button><button onclick="mock('ink')">🐙 Mực</button><button onclick="mock('frenzy')">🌟 Bão Cá Vàng</button></div>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/config.js"></script>
+<script src="/packages/graphics/manifest.js"></script>
+<script src="/packages/graphics/gfx.js"></script>
+<script src="/packages/music/tracks.js"></script>
+<script src="/js/01-setup.js"></script>
+<script src="/js/02-loot.js"></script>
+<script src="/js/03-state.js"></script>
+<script src="/packages/music/music.js"></script>
+<script src="/js/04-sfx-tts.js"></script>
+<script src="/js/05-logic.js"></script>
+<script src="/js/05a-spotlight.js"></script>
+<script src="/js/05b-comedy.js"></script>
+<script src="/js/06-fish.js"></script>
+<script src="/js/07-update.js"></script>
+<script src="/js/08-render.js"></script>
+<script src="/js/09-events.js"></script>
+<script src="/js/10-main.js"></script>
+</body></html>
